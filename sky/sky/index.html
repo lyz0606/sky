@@ -1,0 +1,189 @@
+<!DOCTYPE html>  
+<html lang="zh-CN">  
+<style>
+	/* 通用样式 */
+	body {  
+	    margin: 0;  
+	    font-family: 'Microsoft Yahei', sans-serif;  
+	    color: #fff;  
+	    background-color: #000;  
+	}  
+	
+	a {  
+	    text-decoration: none;  
+	    color:inherit;  
+	}  
+	
+	ul {  
+	    list-style: none;  
+	    margin: 0;  
+	    padding: 0;  
+	}  
+	
+	/* 导航栏样式 */  
+	header {  
+	    position: fixed;  
+	    width: 100%;  
+	    background: rgba(0, 0, 0, 0.7);  
+	    display: flex;  
+	    align-items: center;  
+	    padding: 10px 20px;  
+	    z-index: 1000;  
+	}  
+	
+	.logo {  
+	    font-size: 24px;  
+	    font-family: 'Sacramento', cursive;  
+	    flex: 1;  
+	}  
+	
+	nav ul {  
+	    display: flex;  
+	}  
+	
+	nav ul li {  
+	    margin-left: 20px;  
+	}  
+	
+	nav ul li a {  
+	    font-size: 18px;  
+	    padding: 8px 12px;  
+	    border-radius: 4px;  
+	    transition: background 0.3s;  
+	}  
+	
+	nav ul li a:hover {  
+	    background: rgba(255, 255, 255, 0.2);  
+	}  
+	
+	/* 横幅区域样式 */  
+	.hero {  
+	    height: 100vh;  
+	    background-size: cover;  
+	    background-position: center;  
+	    display: flex;  
+	    align-items: center;  
+	    justify-content: center;  
+	}  
+	
+	.hero-content {  
+	    text-align: center;  
+	    animation: fadeIn 2s;  
+	}  
+	
+	.hero-content h1 {  
+	    font-size: 64px;  
+	    margin-bottom: 20px;  
+	    font-family: 'Sacramento', cursive;  
+	}  
+	
+	.hero-content p {  
+	    font-size: 24px;  
+	    margin-bottom: 40px;  
+	}  
+	
+	.hero-content .button {  
+	    padding: 15px 30px;  
+	    background: #FFD700;  
+	    color: #000;  
+	    font-size: 18px;  
+	    border-radius: 4px;  
+	    transition: background 0.3s;  
+	}  
+	
+	.hero-content .button:hover {  
+	    background: #FFA500;  
+	}  
+	
+	/* 主要内容样式 */  
+	main {  
+	    padding: 100px 20px 60px;  
+	    background: #111;  
+	}  
+	
+	.features {  
+	    display: flex;  
+	    flex-wrap: wrap;  
+	    justify-content: space-around;  
+	}  
+	
+	.feature {  
+	    width: 300px;  
+	    text-align: center;  
+	    margin: 20px;  
+	}  
+	
+	.feature i {  
+	    font-size: 50px;  
+	    margin-bottom: 20px;  
+	    color: #FFD700;  
+	} 
+</style>
+<head>  
+    <meta charset="UTF-8">  
+    <title>光·遇 - 首页</title>  
+    <link rel="stylesheet" href="styles.css">  
+    <!-- 引入字体和图标库 -->  
+    <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  
+</head>  
+<body>  
+    <!-- 导航栏 -->  
+    <header>  
+        <div class="logo">光·遇</div>  
+        <nav>  
+            <ul>  
+                <li><a href=" ">首页</a></li>  
+                <li><a href="story.html">故事背景</a></li>  
+                <li><a href="characters.html">角色介绍</a></li>  
+                <li><a href="world.html">游戏世界</a></li>  
+                <li><a href="contact.html">联系我们</a></li>  
+            </ul>  
+        </nav>  
+    </header>  
+
+    <!-- 横幅区域 -->  
+    <section class="hero" style="background-image: url('background1.jpg');">  
+        <div class="hero-content">  
+            <h1>欢迎来到《光·遇》</h1>  
+            <p>与心爱之人携手逐梦，重拾飞翔的力量。</p >  
+            <a href="story.html" class="button">了解更多</a>  
+        </div>  
+    </section>  
+
+    <!-- 页面内容 -->  
+    <main>  
+        <section class="features">  
+            <div class="feature">  
+                <i class="fas fa-globe-asia"></i>  
+                <h2>宏大的世界</h2>  
+                <p>探索广阔而神秘的王国，每个角落都有惊喜等待着您。</p >  
+            </div>  
+            <div class="feature">  
+                <i class="fas fa-users"></i>  
+                <h2>社交冒险</h2>  
+                <p>与全球的玩家相遇，相知，相助，共同体验温暖与感动。</p >  
+            </div>  
+            <div class="feature">  
+                <i class="fas fa-music"></i>  
+                <h2>唯美的音乐</h2>  
+                <p>沉浸在由知名音乐家打造的动人旋律中，心灵得到净化。</p >  
+            </div>  
+        </section>  
+    </main>  
+<!-- 页脚 -->
+ <footer> 
+ <p>&copy; 2024 光·遇 | 设计者：您的姓名</p >
+  <div class="social-media"> 
+  <a href="#">
+	  <i class="fab fa-weixin">
+  </i></a>
+   <a href="#">
+	   <i class="fab fa-weibo">
+	   </i>
+	   </a>
+	   <a href="#">
+		   
+	   </a>
+	   <i class="fab fa-qq"></i>
+	   </footer>
